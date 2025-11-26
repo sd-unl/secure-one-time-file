@@ -1,0 +1,13 @@
+{
+  "name": "secure-one-time-file",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "uuid": "^9.0.0",
+    "multer": "^1.4.5-lts.1"
+  }
+}
