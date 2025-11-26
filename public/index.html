@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Secure One-Time Upload</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+        <h2>Secure Upload</h2>
+        <input type="file" id="fileInput">
+        <button onclick="uploadFile()" id="uploadBtn">Generate Link</button>
+        
+        <div id="result" class="hidden">
+            <div class="field-group">
+                <label>Link:</label>
+                <div class="row">
+                    <input type="text" id="linkOutput" readonly>
+                    <button class="small-btn" onclick="copyToClip('linkOutput')">Copy</button>
+                </div>
+            </div>
+
+            <div class="field-group">
+                <label>Password:</label>
+                <div class="row">
+                    <input type="text" id="passOutput" readonly class="pass-box">
+                    <button class="small-btn" onclick="copyToClip('passOutput')">Copy</button>
+                </div>
+            </div>
+            
+            <p class="warning">⚠️ Save these now. The file is deleted after the first valid download.</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
